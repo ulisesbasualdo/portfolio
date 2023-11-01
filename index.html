@@ -21,8 +21,6 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -123,7 +121,7 @@
     <!-- ======= Skills Section ======= -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="skills" class="portfolio section-bg">
+    <section id="skills" class="portfolio section-bg"  data-aos="fade-in">
       <div class="container">
 
         <div class="section-title">
@@ -161,11 +159,13 @@
               Soy un estudiante en etapa avanzada de la tecnicatura superior en análisis, desarrollo y programación de aplicaciones.
               Esta carrera es dictada en el Instituto Superior de Formación Técnica 194 de la ciudad de Miramar, Buenos Aires.
             </p>
-        
-            </p>
-           
             <p>
-              Lo que me apasiona del desarrollo es la resolución de problemas y la creación de soluciones innovadoras. Me gusta transformar ideas en resultados concretos.
+              Durante la cursada de la carrera aprendí desde las bases de 
+              la programación hasta poder diseñar y desarrollar sistemas más complejos.
+            </p>
+            <p>
+              Siempre investigo y adquiero nuevos conocimientos en base a nuevos problemas que se me presentan
+              a la hora de programar.
             </p>
           </div>
         </div>
@@ -236,7 +236,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <!-- <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script> -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -249,39 +249,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <script>
-    
-document.addEventListener("DOMContentLoaded", function () {
-  const formulario = document.querySelector(".php-email-form");
-  const mensajeEnviado = document.querySelector(".sent-message");
-  const mensajeError = document.querySelector(".error-message");
-
-  formulario.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const formData = new FormData(formulario);
-
-    fetch("forms/contact.php", {
-      method: "POST",
-      body: formData,
-    })
-      .then((response) => response.text())
-      .then((data) => {
-        if (data === "exito") {
-          mensajeEnviado.style.display = "block";
-          mensajeError.style.display = "none";
-        } else {
-          mensajeEnviado.style.display = "none";
-          mensajeError.style.display = "block";
-        }
-      })
-      .catch((error) => {
-        mensajeEnviado.style.display = "none";
-        mensajeError.style.display = "block";
-      });
-  });
-});
-  </script>
+  
 
 </body>
 
