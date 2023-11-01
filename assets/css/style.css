@@ -261,10 +261,10 @@ h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
-  padding: 10px;
 }
 
 #hero h1 {
+  padding: 10px;
   margin: 0 0 10px 0;
   font-size: 64px;
   font-weight: 700;
@@ -273,6 +273,7 @@ h6 {
 }
 
 #hero p {
+  padding: 10px;
   color: #fff;
   margin-bottom: 50px;
   font-size: 25px;
@@ -301,7 +302,7 @@ h6 {
     padding: 10px;
   }
   #hero h1 {
-    font-size: 28px;
+    font-size: 35px;
     line-height: 36px;
   }
 
