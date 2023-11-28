@@ -245,6 +245,22 @@ h6 {
   background-size: cover;
 }
 
+#hero {
+  width: calc(100% - 300px); /* Ajusta según el ancho del menú lateral */
+  margin-left: 300px; /* Ajusta según el ancho del menú lateral */
+  position: relative;
+  z-index: 1; /* Asegura que el #hero esté detrás del menú lateral */
+}
+
+@media (max-width: 768px) {
+  #hero {
+    width: 100%; /* Restaura el ancho completo en dispositivos móviles */
+    margin-left: 0; /* Sin margen en dispositivos móviles */
+  }
+}
+
+
+
 #hero:before {
   content: "";
   background: rgba(5, 13, 24, 0.5);
