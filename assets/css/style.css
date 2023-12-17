@@ -1,17 +1,11 @@
-/**
-* Template Name: iPortfolio
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  background-color: #071120;
+  color: #fff;
 }
 
 a {
@@ -32,6 +26,8 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
+
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -79,7 +75,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #040B14;
   overflow-y: auto;
 }
 
@@ -241,8 +237,9 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/bg.jpg") top center;
+  background: url("../img/svg.svg") top center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #hero {
@@ -263,7 +260,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.5);
+  background: rgba(5, 13, 24, 0.3);
   height: 100vh;
   position: absolute;
   bottom: 0;
@@ -338,7 +335,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: #08192e;
 }
 
 .section-title {
@@ -351,7 +348,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #4190ff;
 }
 
 .section-title h2::after {
@@ -375,7 +372,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #4190ff;
 }
 
 .about .content ul {
@@ -402,6 +399,10 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+.about .imgperfil img{
+  border-radius: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -460,7 +461,7 @@ section {
 --------------------------------------------------------------*/
 
 #skills{
-  background: #fff;
+  /* background: #08192e; */
 }
 .skills .progress {
   height: 60px;
@@ -561,6 +562,15 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 
+#expertise .card-body{
+  background-color:#071120;
+  color: #fff;
+}
+
+#portfolio .card-body{
+  background-color:#08192e;
+  color: #fff;
+}
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
