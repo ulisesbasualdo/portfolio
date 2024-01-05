@@ -497,6 +497,10 @@ section {
   background-color: #149ddd;
 }
 
+.extra-skills-h2{
+  color: #4190FF;
+}
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -571,6 +575,16 @@ section {
   background-color:#08192e;
   color: #fff;
 }
+.portfolio .bgcard{
+  background-color:#08192e;
+  color: #fff;
+}
+
+.portfolio .bgcard-sec{
+  background-color:#071120;
+  color: #fff;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
